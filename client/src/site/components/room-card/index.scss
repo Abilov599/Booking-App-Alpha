@@ -1,0 +1,196 @@
+#room-cards {
+  display: flex;
+  gap: 20px;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    .card {
+      border-radius: 10px;
+      max-width: 416px;
+      width: 100%;
+
+      position: relative;
+      overflow: hidden;
+      transition: 0.5s;
+      box-shadow: 0 0 5px rgba(0 0 0 / 10%);
+
+      &:hover {
+        box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+        transform: translateY(-5px);
+
+        .card-image {
+          .photo {
+            img {
+              transform: scale(1.1);
+            }
+
+            a {
+              visibility: visible;
+              transform: translateY(0%);
+              opacity: 1;
+              border-radius: 0;
+            }
+          }
+
+          // .room-price {
+          // }
+        }
+
+        .card-details {
+          h3 {
+            a {
+              color: #f4a460;
+            }
+          }
+        }
+      }
+
+      .card-image {
+        position: relative;
+        display: block;
+        cursor: pointer;
+
+        .photo {
+          position: relative;
+          display: block;
+          overflow: hidden;
+
+          &:before {
+            content: "";
+            top: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 8;
+            background: linear-gradient(to top,
+                rgb(47 45 45 / 62%) 0%,
+                rgb(0 0 0 / 0%) 35%,
+                rgba(2, 2, 2, 0) 60%);
+            border-radius: 4px 4px 0 0;
+            opacity: 1;
+          }
+
+          img {
+            width: 100%;
+            max-height: 277.33px;
+            vertical-align: middle;
+            transform: scale(1);
+            transition: all 500ms ease;
+          }
+
+          a {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(12, 62, 185, 0.5);
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: var(--moniz-base, #ffffff);
+            transition: opacity 500ms ease, visibility 500ms ease,
+              transform 500ms ease;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-30%);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            z-index: 9;
+
+            span {
+              &:before {
+                content: "";
+                width: 20px;
+                height: 2px;
+                background: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: all 500ms ease;
+              }
+
+              &:after {
+                content: "";
+                transition: all 500ms ease;
+                width: 2px;
+                height: 20px;
+                background: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+          }
+        }
+
+        .room-price {
+          position: absolute;
+          bottom: 15px;
+          right: 15px;
+          letter-spacing: 1px;
+          font-weight: 600;
+          color: #fff;
+          z-index: 20;
+          font-size: 14px;
+        }
+      }
+
+      .card-details {
+        padding: 25px;
+        width: 100%;
+
+        h3 {
+          margin-bottom: 10px;
+          cursor: pointer;
+
+          a {
+            font-weight: 700;
+            font-family: "Cormorant", serif;
+            font-size: 24px;
+            color: #212121;
+          }
+        }
+
+        p {
+          color: #5a5959;
+          margin-bottom: 15px;
+
+          a {
+            cursor: pointer;
+            color: #5a5959;
+
+            i {
+              margin-right: 5px;
+            }
+          }
+        }
+
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          color: #5a5959;
+
+          li {
+            width: 33%;
+            font-size: 15px;
+            line-height: 29px;
+
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

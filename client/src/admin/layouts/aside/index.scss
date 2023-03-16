@@ -1,0 +1,37 @@
+#aside {
+  background-color: #0091d5;
+  min-height: 100vh;
+  max-width: 307px;
+  width: 100%;
+
+  nav {
+    padding: 30px;
+
+    .logo {
+      margin-bottom: 30px;
+      text-align: center;
+
+      img {
+        height: 70px;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding-right: 80px;
+
+      li {
+        a {
+          font-size: 20px;
+          color: aliceblue;
+
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

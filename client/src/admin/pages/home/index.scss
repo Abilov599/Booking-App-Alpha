@@ -1,0 +1,51 @@
+#admin-home {
+    width: 100%;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        form {
+            width: 20%;
+            text-align: center;
+
+            .fields {
+                display: flex;
+                flex-direction: row;
+                column-gap: 20px;
+                align-items: flex-start;
+
+                div {
+                    color: red
+                }
+
+                input {
+                    padding: 0.5rem;
+                    margin: 10px 0;
+                    border: 1px solid #ccc;
+                    border-radius: 0.5rem;
+                }
+
+
+            }
+
+            button {
+                margin: 10px 0;
+                padding: 0.5rem;
+                border: 1px solid #ccc;
+                border-radius: 0.5rem;
+                color: #fff;
+                background-color: #0d48d4;
+
+            }
+
+        }
+    }
+}

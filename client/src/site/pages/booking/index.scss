@@ -1,0 +1,279 @@
+#booking {
+    .slider {
+        .slide {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .main-info {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: -60px;
+
+        .container {
+            padding: 0;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            .box {
+                padding: 30px;
+                display: flex;
+                gap: 30px;
+                align-items: center;
+
+                .image {
+                    img {
+                        max-width: 294px;
+                    }
+                }
+
+                .content {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .for-rent {
+                        padding: 4px 15px 4px;
+                        border-radius: 3px;
+                        color: #fff;
+                        font-size: 14px;
+                        width: 85px;
+                        background: #F4A460;
+                        font-weight: 400;
+                    }
+
+                    h1 {
+                        width: 100%;
+                        font-size: 30px;
+
+                        span {
+                            float: right;
+                            letter-spacing: 1px;
+                            font-weight: 600;
+                            color: #f4a460;
+                            font-size: 22px;
+
+                            span {
+                                color: #212121;
+                            }
+                        }
+                    }
+
+                    .facilities {
+                        ul {
+                            display: flex;
+                            width: 100%;
+                            color: #5a5959;
+                            gap: 20px;
+
+                            li {
+                                font-size: 16px;
+                                line-height: 29px;
+
+                                i {
+                                    color: #f4a460;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    p {
+                        color: #5a5959;
+                        margin-bottom: 15px;
+
+                        a {
+                            cursor: pointer;
+                            color: #5a5959;
+
+                            i {
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .room-details {
+        padding: 40px 0 70px;
+
+        .container {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+
+            .room-about {
+                max-width: 856px;
+
+                .description {
+                    margin-bottom: 50px;
+
+                    h3 {
+                        font-family: "Cormorant", serif;
+                        font-size: 26px;
+                        font-weight: 700;
+                        margin: 0 0 20px;
+                        color: #212121;
+                    }
+
+                    p {
+                        color: #5a5959;
+                        line-height: 25px;
+                    }
+                }
+
+                .extra-service {
+                    margin-bottom: 50px;
+
+                    h3 {
+                        font-family: "Cormorant", serif;
+                        font-size: 26px;
+                        font-weight: 700;
+                        margin: 0 0 20px;
+                        color: #212121;
+                    }
+
+                    .extra-service-item {
+                        display: table;
+                        margin-bottom: 10px;
+
+                        p {
+                            color: #5A5959;
+                            position: relative;
+                            display: table-cell;
+                            width: 1%;
+                            white-space: nowrap;
+                            padding: 0;
+                        }
+
+                        .border-center {
+                            position: relative;
+                            display: table-cell;
+                            height: 3px;
+                            width: 98%;
+                            z-index: 1;
+                            background-image: radial-gradient(circle closest-side, #cdcdcd 99%, transparent 100%);
+                            background-position: 50% 70%;
+                            background-size: 6px 2px;
+                            background-repeat: repeat-x;
+                        }
+
+                        .label-items-value {
+                            position: relative;
+                            display: table-cell;
+                            width: 1%;
+                            white-space: nowrap;
+                            padding: 0;
+                            color: #5a5959;
+
+                            .price {
+                                color: #F4A460;
+                                margin: 0 6px 0 0;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .payment {
+                width: 100%;
+                height: 100%;
+                margin-left: 30px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+                .box {
+                    padding: 30px;
+
+                    h3 {
+                        font-family: "Cormorant", serif;
+                        font-size: 26px;
+                        margin: 0 0 30px;
+                        font-weight: 700;
+                        color: #212121;
+                    }
+
+                    .prices {
+                        .prices-item {
+                            display: table;
+                            margin-bottom: 15px;
+
+                            &.total {
+                                margin-top: 15px;
+                            }
+
+                            p {
+                                color: #5A5959;
+                                position: relative;
+                                display: table-cell;
+                                width: 1%;
+                                white-space: nowrap;
+                                padding: 0;
+                            }
+
+                            .border-center {
+                                position: relative;
+                                display: table-cell;
+                                height: 3px;
+                                width: 98%;
+                                z-index: 1;
+                                background-image: radial-gradient(circle closest-side, #F4A460 99%, transparent 100%);
+                                background-position: 50% 70%;
+                                background-size: 6px 2px;
+                                background-repeat: repeat-x;
+                            }
+
+                            .label-items-value {
+                                position: relative;
+                                display: table-cell;
+                                width: 1%;
+                                white-space: nowrap;
+                                padding: 0;
+                                color: #5a5959;
+
+                                .price {
+                                    color: #F4A460;
+                                    margin: 0 6px 0 0;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+
+                    button {
+                        cursor: pointer;
+                        margin-top: 20px;
+                        width: 100%;
+                        background-color: #F4A460;
+                        color: #fff;
+                        border: none;
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+                        -webkit-appearance: none;
+                        outline: none !important;
+                        color: #ffffff;
+                        text-transform: capitalize;
+                        transition: all 0.3s linear;
+                        z-index: 1;
+                        overflow: hidden;
+                        padding: 0 30px;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 46px;
+                        border-radius: 3px;
+                        letter-spacing: 0.5px;
+                        font-family: 'Mulish', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}

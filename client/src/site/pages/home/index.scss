@@ -1,0 +1,51 @@
+#home {
+  margin-top: -100.8px;
+  #greeting {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../../assets/images/home/bg-img.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100.8px;
+    .container {
+      padding: 67px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .welcome {
+        text-align: left;
+        max-width: 550px;
+        h2 {
+          color: #fff;
+          margin: 0 0 20px;
+          font-weight: 700;
+          font-size: 50px;
+        }
+        p {
+          margin-bottom: 30px;
+          color: #fff;
+          line-height: 1.6;
+          font-size: 18px;
+          font-weight: 400;
+          opacity: 0.9;
+        }
+        a {
+          background-color: #f4a460;
+          color: #ffffff;
+          text-transform: capitalize;
+          transition: all 0.3s linear;
+          padding: 15px 30px;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 50px;
+          border-radius: 0;
+          letter-spacing: 0.5px;
+          &:hover {
+            color: #f4a460;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}

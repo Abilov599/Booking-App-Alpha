@@ -1,0 +1,92 @@
+.search-room {
+  padding: 50px;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+  form {
+    h4 {
+      margin-bottom: 20px;
+      color: #212121;
+      font-weight: 600;
+      font-size: 1.5rem;
+      span {
+        color: #f4a460;
+      }
+    }
+    .form-group {
+      width: 100%;
+      margin-bottom: 10px;
+      .ant-picker {
+        width: 100%;
+        background: #eef1f6 !important;
+        height: 50px;
+        .ant-picker-input {
+          input {
+            color: #7f7f80 !important;
+            cursor: pointer;
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            line-height: inherit !important;
+            padding: 13px 13px !important;
+            width: 100%;
+            padding: 5px 4px !important;
+            border-radius: 3px;
+          }
+        }
+      }
+      .ant-select {
+        width: 100% !important;
+        height: 50px !important;
+        text-align: left;
+        .ant-select-selector {
+          width: inherit;
+          height: 100%;
+          padding: 4px 11px 4px !important;
+          background: #eef1f6 !important;
+          input {
+            width: inherit;
+            height: inherit;
+            cursor: pointer;
+          }
+          span {
+            display: flex;
+            align-items: center;
+            width: inherit;
+            height: inherit;
+            padding: 5px 4px !important;
+            border-radius: 3px;
+            color: #787878 !important;
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            line-height: inherit !important;
+          }
+        }
+      }
+      button {
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+        background-color: #f4a460;
+        color: #ffffff;
+        text-transform: capitalize;
+        transition: all 0.3s linear;
+        padding: 0 30px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 46px;
+        border-radius: 3px;
+        border: none;
+        letter-spacing: 0.5px;
+        border: 1px solid transparent;
+        &:hover {
+          color: #f4a460;
+          background-color: white;
+          border: 1px solid #dcdbdb;
+        }
+      }
+    }
+  }
+}
