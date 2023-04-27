@@ -109,11 +109,7 @@ const AllUsers = () => {
 
   return (
     <div style={{ width: "100%" }}>
-      <Table
-        columns={columns}
-        dataSource={data}
-        rowKey="_id"
-      />
+      <Table columns={columns} dataSource={data} rowKey="_id" />
     </div>
   );
 };
